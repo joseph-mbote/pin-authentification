@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int pin=0000;
+    int a;
+    int trial=0;
+
+    cout<<"Enter pin : ";
+
+    while(trial<3){
+            cin>>a;
+            if(a==pin){
+        cout<<"Login Successfull !!";
+    break;
+            }else{
+            cout<<"Pin incorect ,Try again"<<endl;
+            ++trial;
+            }
+    }while(trial=3){
+        cin>>a;
+        if(a!=pin){
+        cout<<"Invalid Login. Account broked. Enter Puk Number"<<endl;
+        }
+        ++trial;
+    }
+
+
+    return 0;
+}
